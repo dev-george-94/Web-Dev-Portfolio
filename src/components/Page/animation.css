@@ -1,0 +1,7 @@
+
+/* Chrome Default based on OS setting so it wont be working if Adjusted for Best Perforamance */
+/* Toggle on at the link below; Find alternative solution */
+/* chrome://flags/#smooth-scrolling  */
+.pages {
+    scroll-behavior: smooth !important;
+}

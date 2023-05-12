@@ -1,0 +1,307 @@
+/* 
+            Width	   Height	  
+Mobile	    280-540	   653-915	        	        
+Tablet	    1024-1368  768-912	 	   
+*/
+
+
+body {
+  /* background-color:lightgoldenrodyellow; */
+}
+
+/* Tablet - Portrait */
+@media screen and (min-height:540px) 
+              and (max-height:1368px) 
+              and (orientation:portrait)
+{    
+  /* body { background-color:darkslateblue; } */
+
+  
+  #home {
+    flex-direction: column-reverse;
+  }
+
+  #home > .ilustration > img {
+    max-height: 50vh;
+  }
+
+  #about > .container1 {
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+  }
+
+  #about > .container1 > .ilustration {
+    max-height: 35vh;
+  }
+
+  #contact > .container1 > .container2 {
+    flex-direction: column;
+  }
+
+  #contact > .container1 > .container2 > .ilustration > img{
+    max-height: 45vh;
+  }
+
+   /* Navigation */
+   .app {
+    flex-direction: row;
+  }
+
+  .navbar > .container1 {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .navbar.closed > .container1 > .navigation {
+    width: 2.5rem;
+  }
+  
+  .navbar.open > .container1 > .navigation {
+    width:150px;
+  }
+  
+
+  .navbar > .container1 > .navigation > .links {
+    flex-direction: column;
+  }
+
+  .navbar > .container1 > .navigation > .btn-toggle {
+    display: flex;
+  }
+
+  .navbar.closed > .container1 {
+    width: auto;
+  }
+
+  .navbar.closed > .container1 > .navigation > .links > li[class*="link"] > .card > .label {
+    display: none;
+  }
+
+}
+
+
+/* Tablet - Landscape */
+@media screen and (min-width:540px) 
+              and (max-width:1368px) 
+              and (orientation:landscape)
+{    
+  /* body { background-color:lightslategray; } */
+
+  
+
+
+    /* Navigation */
+  .app {
+    flex-direction: row;
+  }
+
+  .navbar > .container1 {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .navbar.closed > .container1 > .navigation {
+    width: 2.5rem;
+  }
+  
+  .navbar.open > .container1 > .navigation {
+    width:150px;
+  }
+  
+
+  .navbar > .container1 > .navigation > .links {
+    flex-direction: column;
+  }
+
+  .navbar > .container1 > .navigation > .btn-toggle {
+    display: flex;
+  }
+
+  .navbar.closed > .container1 {
+    width: auto;
+  }
+
+  .navbar.closed > .container1 > .navigation > .links > li[class*="link"] > .card > .label {
+    display: none;
+  }
+
+  
+
+}
+
+
+
+/* Mobile - Portrait */
+@media screen and (min-width:0px)
+              and (max-width:540px) 
+              and (orientation:portrait)
+{
+  /* body { background-color:darkcyan; }   */
+
+  #home {
+    flex-direction: column-reverse;
+  }
+
+  #home > .ilustration > img {
+    max-height: 50vh;
+  }
+
+  #about > .container1 {
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+  }
+
+  #about > .container1 > .ilustration {
+    max-height: 35vh;
+  }
+
+  #about > .container1 > .container2 > .text-summary{
+    flex:1;
+  }
+
+  
+
+  #contact > .container1 {
+    align-items: stretch !important;
+    max-width: 450px;
+  }
+  
+
+  #contact > .container1 > .container2 {
+    flex-direction: column;
+  }
+
+  #contact > .container1 > .container2 > .ilustration > img{
+    max-height: 45vh;
+  }
+
+ /* Navigation */
+ .app {
+    flex-direction: row;
+  }
+
+  .navbar > .container1 {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .navbar.closed > .container1 > .navigation {
+    width: 2.5rem;
+  }
+
+  .navbar.open > .container1 > .navigation {
+    width:150px;
+  }
+
+
+  .navbar > .container1 > .navigation > .links {
+    flex-direction: column;
+  }
+
+  .navbar > .container1 > .navigation > .btn-toggle {
+    display: flex;
+  }
+
+  .navbar.closed > .container1 {
+    width: auto;
+  }
+
+  .navbar.closed > .container1 > .navigation > .links > li[class*="link"] > .card > .label {
+    display: none;
+  }
+
+
+#projects > #projects-gallery .page {
+  align-content: normal;
+}
+
+#projects > #projects-gallery .project{
+  flex:1
+}
+
+#projects > #projects-gallery .project > .container1 {
+  max-width: 350px;
+  flex-direction: column;
+}
+
+#projects > #projects-gallery .project > .container1 > .thumbnail {
+  max-height: 35%;
+  max-width: none;
+}
+
+}
+
+/* Mobile - Landscape */
+@media screen and (min-height:0px)
+              and (max-height:540px) 
+              and (orientation:landscape)
+{
+  /* body { background-color: lightcoral; } */
+
+
+  #about > .container1 > .ilustration {
+    max-width: 35vw;
+  }
+
+  #about > .container1 > .container2 > .text-summary {
+    flex:1;
+  }
+
+
+  #contact > .container1 > .container2 > .ilustration > img {
+    max-height: 78vh;
+  }
+
+    /* Navigation */
+  .app {
+    flex-direction: row;
+  }
+
+  .navbar > .container1 {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .navbar.closed > .container1 > .navigation {
+    width: 2.5rem;
+  }
+  
+  .navbar.open > .container1 > .navigation {
+    width:150px;
+  }
+  
+
+  .navbar > .container1 > .navigation > .links {
+    flex-direction: column;
+  }
+
+  .navbar > .container1 > .navigation > .btn-toggle {
+    display: flex;
+  }
+
+  .navbar.closed > .container1 {
+    width: auto;
+  }
+
+  .navbar.closed > .container1 > .navigation > .links > li[class*="link"] > .card > .label {
+    display: none;
+  }
+
+
+   #projects > #projects-gallery .page {
+    align-content: normal;
+  }
+  
+
+  #projects > #projects-gallery .project{
+    margin:0 !important;
+  }
+  
+
+}

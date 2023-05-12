@@ -1,0 +1,101 @@
+
+svg path {
+    stroke: inherit;
+}
+
+
+.navbar {
+    display: flex;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+}
+
+.navbar > .container1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+
+
+.navbar > .container1 > .navigation {
+    overflow: hidden;
+    background-color: var(--container-backcolor);
+}
+
+
+.navbar > .container1 > .navigation >.btn-toggle {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    margin:0.25rem;
+}
+
+
+
+.navbar > .container1 > .navigation > .links {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.navbar > .container1 > .navigation > .links > li[class*="link"] > .card {
+    margin:0.25rem;
+    flex-direction: row;
+    gap:0.25rem;
+}
+
+.navbar.open > .container1 > .navigation > .links > li[class*="link"] > .card {
+    padding:0 3vw;
+}
+
+
+
+
+.navbar > .container1 > .navigation > .btn-toggle > svg, 
+.navbar > .container1 > .navigation > .links > li[class*="link"] > .card > .image  {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.25rem;
+    border-radius: 50%;
+} 
+ 
+
+.navbar.closed > .container1 > .overlay-shadow {
+    display: none;
+}
+
+.navbar.open > .container1 > .overlay-shadow {
+    flex:1;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar > .container1 > .navigation > .btn-toggle > svg,
+.navbar > .container1 > .navigation > .links > li[class*="link"] > .card > .image 
+/* .navbar > .container1 > .navigation > .links > li[class*="link"] > .card > .label  */
+{
+    background-color: var(--emphasis-backcolor);
+    color:var(--emphasis-forecolor);
+}
+
+.navbar > .container1 > .navigation > .links > li[class*="link"] > .current.card > .image
+/* .navbar > .container1 > .navigation > .links > li[class*="link"] > .current.card > .label  */
+{
+    background-color: var(--emphasis-forecolor);
+    color:var(--emphasis-backcolor);
+} 
+
+ .navbar > .container1 > .navigation > .links > li[class*="link"] > .card > .label {
+    color: var(--emphasis-forecolor);
+ }
+
+
+
+
+
+
+
+
+
+

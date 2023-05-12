@@ -1,0 +1,31 @@
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery > .content {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    scroll-snap-type: both mandatory;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.gallery > .content::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery > .content > .page {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    overflow-y: scroll;
+}
+
+.gallery > .content > .page::-webkit-scrollbar{
+    display: none;
+}
+
+

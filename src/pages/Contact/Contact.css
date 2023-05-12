@@ -1,0 +1,108 @@
+#contact {
+    height: 100vh;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--page-backcolor);
+    color:var(--page-forecolor);
+}
+
+#contact > .title {
+    display: flex;
+    justify-content: center;
+}
+
+#contact > .container1 {
+    flex:1;
+    display: flex;
+    align-items: center;
+    
+}
+
+#contact > .container1 >.container2 {
+    display: flex;
+    gap:0.5rem;
+}
+
+#contact > .container1 > .container2 > #contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex:1;
+}
+
+#contact > .container1 > .container2 > #contact-form > .form-input-group {
+    width: 100%;
+    display: flex;
+    gap:1rem;
+}
+#contact > .container1 > .container2 > #contact-form > .form-input-group > .form-input {
+    width: 100%;
+}
+
+#contact > .container1 > .container2 > #contact-form > .form-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact > .container1 > .container2 > #contact-form > .form-input-group > .form-input > input,
+#contact > .container1 > .container2 > #contact-form > .form-input-group > .form-input > textarea,
+#contact > .container1 > .container2 > #contact-form > .form-input > input,
+#contact > .container1 > .container2 > #contact-form > .form-input > textarea {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    border: none;
+    border-left: 3px solid rgba(0,0,0,0.1);
+    border-bottom: 3px solid rgba(0,0,0,0.1);
+    color:inherit;
+    background-color: var(--container-backcolor);
+    padding-left: 0.5rem;
+    padding-top:0.25rem;
+}
+
+
+
+#contact > .container1 > .container2 > #contact-form > .form-input[class~="message"] {
+    flex:1;
+    max-height: 255px;
+}
+
+#contact > .container1 > .container2 > #contact-form > .form-input[class~="message"] textarea {
+    height: 100%;
+    resize: none;
+    
+}
+
+#contact > .container1 > .container2 > #contact-form > input[type="submit"]{
+    background-color: rgba(0,0,0,0.1);
+    min-height: 2rem;
+    padding:0.125rem 1.25rem;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    border-radius: 15px;
+    background-color: var(--emphasis-backcolor);
+    color:var(--emphasis-forecolor);
+}
+
+#contact > .container1 > .container2 > #contact-form > input[type="submit"][class="default"]{
+    background-color: var(--emphasis-forecolor);
+    color:var(--emphasis-backcolor);
+}
+
+
+#contact > .container1 > .container2 > .ilustration {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #contact > .container1 > .container2 > .ilustration > img {
+    display: flex;
+    width: 100%;
+  }

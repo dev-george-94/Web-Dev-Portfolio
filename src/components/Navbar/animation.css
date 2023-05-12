@@ -1,0 +1,11 @@
+
+
+/* Grow Effect for Navbar */
+.navbar > .container1 > .navigation {
+ transition: width 250ms ease-in 0.25ms;
+}
+
+
+
+
+
